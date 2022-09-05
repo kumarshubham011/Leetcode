@@ -7,3 +7,4 @@ def dtb(n):
 
 
 print(dtb(15))
+# 1111

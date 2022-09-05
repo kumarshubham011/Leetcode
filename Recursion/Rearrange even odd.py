@@ -2,7 +2,7 @@ def even_odd(arr, left, right):
     if left >= right:
         return arr
     if arr[left] % 2 == 0:
-        # means left ele is odd -> move left to next element
+        # means left ele is even -> move left to next element
         return even_odd(arr, left + 1, right)
     elif arr[right] % 2 != 0:
         # right ele is odd - > decrement right to check prev ele

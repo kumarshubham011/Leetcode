@@ -7,3 +7,10 @@ def pow(x, n):
 
 
 print(pow(3, 1.4))
+
+
+# PROGRAM FOR FACTORIAL
+def factorial(num):
+    if num <= 1:
+        return 1
+    return num * factorial(num-1)
