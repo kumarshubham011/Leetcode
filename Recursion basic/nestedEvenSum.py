@@ -1,6 +1,3 @@
-#   Created by Elshad Karimov
-#   Copyright © AppMillers. All rights reserved.
-
 # nestedEvenSum Solution
 
 def nestedEvenSum(obj, sum=0):

@@ -1,5 +1,3 @@
-
-
 # def flatten(arr):
 #     resultArr = []
 #     for custItem in arr:

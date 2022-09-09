@@ -1,8 +1,3 @@
-#   Created by Elshad Karimov
-#   Copyright © AppMillers. All rights reserved.
-
-# collectStrings Solution
-
 def collectStrings(obj):
     resultArr = []
     for key in obj:

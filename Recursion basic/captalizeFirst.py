@@ -1,8 +1,3 @@
-#   Created by Elshad Karimov
-#   Copyright © AppMillers. All rights reserved.
-
-# capitalizeFirst Solution
-
 def capitalizeFirst(arr):
     result = []
     if len(arr) == 0:
