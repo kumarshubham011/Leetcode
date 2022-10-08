@@ -30,34 +30,34 @@ class Solution:
                 length = max(length, i - prefixsum[sm-k])
         return length
 
-        # METHOD 3
+# METHOD 3
 
-        # # dictionary mydict implemented
-        # # as hash map
-        # mydict = dict()
+# # dictionary mydict implemented
+# # as hash map
+# mydict = dict()
 
-        # # Initialize sum and maxLen with 0
-        # sum = 0
-        # maxLen = 0
+# # Initialize sum and maxLen with 0
+# sum = 0
+# maxLen = 0
 
-        # # traverse the given array
-        # for i in range(n):
+# # traverse the given array
+# for i in range(n):
 
-        #     # accumulate the sum
-        #     sum += arr[i]
+#     # accumulate the sum
+#     sum += arr[i]
 
-        #     # when subArray starts from index '0'
-        #     if (sum == k):
-        #         maxLen = i + 1
+#     # when subArray starts from index '0'
+#     if (sum == k):
+#         maxLen = i + 1
 
-        #     # check if 'sum-k' is present in
-        #     # mydict or not
-        #     elif (sum - k) in mydict:
-        #         maxLen = max(maxLen, i - mydict[sum - k])
+#     # check if 'sum-k' is present in
+#     # mydict or not
+#     elif (sum - k) in mydict:
+#         maxLen = max(maxLen, i - mydict[sum - k])
 
-        #     # if sum is not present in dictionary
-        #     # push it in the dictionary with its index
-        #     if sum not in mydict:
-        #         mydict[sum] = i
+#     # if sum is not present in dictionary
+#     # push it in the dictionary with its index
+#     if sum not in mydict:
+#         mydict[sum] = i
 
-        # return maxLen
+# return maxLen
