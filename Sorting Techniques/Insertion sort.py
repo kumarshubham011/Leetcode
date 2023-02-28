@@ -1,3 +1,6 @@
+# Worst-case:- n^2 comparisons and swaps
+# Best-case:- n comparisons and O(1) swaps
+
 # ITERATIVE APPROACH
 class Solution:
     def insertionSort(self, alist, n):

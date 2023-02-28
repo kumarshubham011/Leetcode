@@ -1,3 +1,8 @@
+# For the Worst case:
+# Total number of swaps = Total number of comparison
+# Total number of comparison (Worst case) = n(n-1)/2
+# Total number of swaps (Worst case) = n(n-1)/2
+
 # METHOD 1: ITERATIVE
 
 class Solution:
