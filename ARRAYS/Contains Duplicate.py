@@ -20,7 +20,7 @@ class Solution:
         return False
 
 
-# METHOD 2
+# METHOD 2 
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         rep_rec = set()
@@ -32,14 +32,14 @@ class Solution:
         return False
 
 
-# METHOD 3
+# METHOD 3 => O(n)
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         var = set(nums)
         return len(var) != len(nums)
 
 
-# METHOD 4 - SORTING
+# METHOD 4 - SORTING => O(n log n)
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         nums.sort()
