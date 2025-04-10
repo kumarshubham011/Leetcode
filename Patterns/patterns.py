@@ -129,3 +129,68 @@ def nStarTriangle(n: int) -> None:
                 print(f" ", end="")
             print()
 print(nStarTriangle(3))
+
+
+# Input: ‘N’ = 3
+
+# Output: 
+
+# *****
+#  ***
+#   *
+
+def nStarTriangle(n: int) -> None:
+    for i in range(n):
+        #space
+        for j in range(i):
+            print(" ", end="")
+
+        #stars
+        for j in range(2*n - 1 - 2*i):
+            print("*", end="")
+        
+        #space
+        for j in range(i):
+            print(" ", end="")
+        print()
+
+
+
+# Example:
+# Input: ‘N’ = 3
+
+# Output: 
+
+#   *
+#  ***
+# *****
+# *****
+#  ***
+#   *
+
+def nStarDiamond(n: int) -> None:
+    # for first pyramid patter
+    for i in range(n):
+        # space
+        for j in range(n-i-1):
+            print(" ", end="")
+        # star
+        for j in range(2*i + 1):
+            print("*", end="")
+        # space
+        for j in range(n-i-1):
+            print(" ", end="")
+        print()
+    
+    # for secodn pyramid pattern
+    for i in range(n):
+        # space
+        for j in range(i):
+            print(" ", end="")
+        # star
+        for j in range(2*n - 1 - 2*i):
+            print("*", end="")
+        # space
+        for j in range(i):
+            print(" ", end="")
+        print()
