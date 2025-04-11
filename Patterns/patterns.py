@@ -194,3 +194,51 @@ def nStarDiamond(n: int) -> None:
         for j in range(i):
             print(" ", end="")
         print()
+
+
+#  Rotated Triangle
+# Example:
+# Input: ‘N’ = 3
+
+# Output: 
+
+# *
+# **
+# ***
+# **
+# *
+
+def nStarTriangle(n: int) -> None:
+    # Write your code here.
+    for i in range(1, 2*n ):
+        stars = i
+        if i > n:
+            stars = 2*n - i # ex: 6-4
+        for j in range(stars):
+            print("*", end="")
+
+        print()
+print(nStarTriangle(3))
+
+
+# Example:
+# Input: ‘N’ = 3
+
+# Output: 
+
+# 1
+# 0 1
+# 1 0 1
+
+def nBinaryTriangle(n: int) -> None:
+    # Write your solution here.
+    for i in range(1,n+1):
+        if i%2 == 0:
+            start = 0
+        else:
+            start = 1
+
+        for j in range(i):
+            print(start, end=" ")
+            start = 1-start # 0 becomes 1, 1 becomes 0
+        print()
