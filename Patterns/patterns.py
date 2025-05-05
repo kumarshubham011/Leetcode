@@ -242,3 +242,76 @@ def nBinaryTriangle(n: int) -> None:
             print(start, end=" ")
             start = 1-start # 0 becomes 1, 1 becomes 0
         print()
+
+
+# 1        1
+# 12      21
+# 123    321
+# 1234  4321
+# 1234554321
+def numberCrown(n: int) -> None:
+    for i in range(1, n+1):
+        # numbers
+        for j in range(1, i+1):
+            print(j, end="")
+        # space
+        for j in range (0, 2 * (n-i)):
+            print(" ", end="")
+        # numbers
+        for j in range(i, 0, -1):
+            print(j, end="")
+
+        print()
+
+print(numberCrown(5))
+
+
+
+# Sample Input 2 :
+# 4
+# Sample Output 2 :
+# 1
+# 2 3
+# 4 5 6 
+# 7 8 9 10
+
+def nNumberTriangle(n: int) -> None:
+    num = 1
+    for i in range(n):
+        for j in range(i+1):
+            print(num, end=" ")
+            num += 1
+        print()
+
+
+# Example:
+# Input: ‘N’ = 3
+
+# Output: 
+
+# A
+# A B
+# A B C
+
+def nLetterTriangle(n: int) -> None:
+    for i in range(1, n+1):
+        for j in range(65, 65 + i):
+            print(chr(j), end=" ")
+        print()
+
+
+
+
+# Input: ‘N’ = 3
+
+# Output: 
+
+# A B C
+# A B
+# A
+
+def nLetterTriangle(n: int):
+    for i in range(1, n+1):
+        for j in range(65, 65 + n + 1 -i):
+            print(chr(j), end= " ")
+        print()
